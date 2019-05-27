@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 28
@@ -24,16 +25,16 @@ android {
 
 }
 
-//publish {
-//
-//    groupId = 'com.github.pjlbfr'
-//    artifactId = 'stickyheaders'
-//    userOrg = 'pjlbfr'
-//    repoName = 'stickyheaders'
-//    publishVersion = '0.1.0'
-//    desc = 'Test stickyheaders library.'
-//    website = 'https://github.com/pjlbfr/TestStickyHeaders'
-//}
+publish {
+
+    groupId = 'com.github.pjlbfr'
+    artifactId = 'stickyheaders'
+    userOrg = 'pjlbfr'
+    repoName = 'stickyheaders'
+    publishVersion = '0.1.0'
+    desc = 'Test stickyheaders library.'
+    website = 'https://github.com/pjlbfr/StickyHeadersTest'
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
