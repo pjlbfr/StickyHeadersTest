@@ -40,7 +40,6 @@ public class HeaderRenderer {
    * @param canvas       the canvas on which to draw the header
    * @param header       the view to draw as the header
    * @param offset       a Rect used to define the x/y offset of the header. Specify x/y offset by setting
-   *                     the {@link Rect#left} and {@link Rect#top} properties, respectively.
    */
   public void drawHeader(RecyclerView recyclerView, Canvas canvas, View header, Rect offset) {
     canvas.save();
